@@ -32,10 +32,8 @@ Permite gestionar productos, categorías, materiales, proveedores y ventas con u
 
 ### Pasos para ejecutar el proyecto
 
-1. Clonar el repositorio
-   ```bash
-   git clone https://github.com/TU-USUARIO/golden-luxe-inventory.git
-   cd golden-luxe-inventory
+1. Descarga y Extrae el ZIP del proyecto en una carpeta nueva 
+   Entra a esa carpeta con cd
 
 2. Instalar dependencias
     
@@ -43,8 +41,8 @@ Permite gestionar productos, categorías, materiales, proveedores y ventas con u
 
 3. Configurar variables de entorno
 
-    Crear archivo .env en la raíz
-    Agregar:
+    Revisar archivo .env en la raíz
+    Verificar:
     PORT=3000
     MONGODB_URI=mongodb+srv://admin:admin123@cluster0.mrrk4fo.mongodb.net/golden_luxe?appName=Cluster0
 
