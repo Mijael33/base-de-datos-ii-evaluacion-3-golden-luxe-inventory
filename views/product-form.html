@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Luxe - Nuevo Producto</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="logo">GOLDEN<span>LUXE</span></div>
+        <div class="nav-links">
+            <a href="/">Inicio</a>
+            <a href="/products">Productos</a>
+            <a href="/product-form" class="active">Nuevo Producto</a>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <h1>Crear Nuevo Producto</h1>
+        
+        <div class="form-container">
+            <form id="productForm">
+                <input type="hidden" id="productId">
+                
+                <div class="form-group">
+                    <label for="name">Nombre del producto *</label>
+                    <input type="text" id="name" class="form-control" required 
+                           placeholder="Ej: Anillo Solitario Diamante">
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Descripción *</label>
+                    <textarea id="description" class="form-control" required 
+                              placeholder="Describe las características del producto"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="price">Precio ($) *</label>
+                    <input type="number" id="price" class="form-control" required 
+                           min="0" step="any" placeholder="Ej: 2500000">
+                    <small style="color: #d4af37;">Puedes ingresar cualquier valor numérico</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="stock">Stock (unidades) *</label>
+                    <input type="number" id="stock" class="form-control" required 
+                           min="0" step="1" placeholder="Ej: 5">
+                </div>
+                
+                <div class="form-group">
+                    <label for="category">Categoría *</label>
+                    <select id="category" class="form-control" required>
+                        <option value="">Seleccione una categoría</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="material">Material *</label>
+                    <select id="material" class="form-control" required>
+                        <option value="">Seleccione un material</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="weight">Peso (gramos) *</label>
+                    <input type="number" id="weight" class="form-control" required 
+                           min="0.01" step="any" placeholder="Ej: 3.5">
+                    <small style="color: #d4af37;">Puedes ingresar cualquier valor numérico (ej: 0.5, 12.75, 100)</small>
+                </div>
+                
+                <div style="display: flex; gap: 1rem; justify-content: flex-end;">
+                    <button type="button" onclick="window.location.href='/products'" 
+                            class="btn btn-secondary">
+                        Cancelar
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        Guardar Producto
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer MODIFICADO -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Golden Luxe</h3>
+                <p>Sistema de inventario para joyerías exclusivas</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/products">Productos</a></li>
+                    <li><a href="/product-form">Nuevo Producto</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Desarrollado por:</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><strong>Mijael Engelmann</strong></li>
+                    <li>C.I.: V-31.222.463</li>
+                    <li>UNETI - Base de Datos II</li>
+                    <li>Profesora: Inmaculada Maldonado</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Golden Luxe Inventory. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
