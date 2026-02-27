@@ -41,8 +41,7 @@ Permite gestionar productos, categorías, materiales, proveedores y ventas con u
 
 3. Configurar variables de entorno
 
-    Revisar archivo .env en la raíz
-    Verificar:
+    Crear un archivo llamado .env en la raíz del proyecto y pegar esto:
     PORT=3000
     MONGODB_URI=mongodb+srv://admin:admin123@cluster0.mrrk4fo.mongodb.net/golden_luxe?appName=Cluster0
 
